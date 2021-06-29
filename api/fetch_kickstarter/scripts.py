@@ -91,7 +91,7 @@ def fetch_kickstarter():
 
     df = df[(df['deadline_date'] == completed_at)]
 
-    df["websites"] = df["creator_urls_web_user"].apply(get_websites)
+    #df["websites"] = df["creator_urls_web_user"].apply(get_websites)
 
     result = df.to_json(orient="records")
 
